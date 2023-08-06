@@ -5,7 +5,7 @@ import { NextApiRequest } from "next";
 import { getToken } from "next-auth/jwt";
 
 export async function getSession() {
-    return await getServerSession(authOptions)
+    return await getServerSession(authOptions);
 }
 
 export async function getCurrentUser() {
